@@ -1,2 +1,2 @@
-# store-xpto-angularjs
-Pseudo Store XPTO 
+# xpto-store-angularjs
+Pseudo XPTO Store 
