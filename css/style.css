@@ -1,0 +1,15 @@
+.ng-invalid.ng-dirty {
+	border-color: red;
+}
+
+.ng-valid.ng-dirty {
+	border-color: green;
+}
+
+.list-inline {
+	margin-left: 0;
+}
+
+.list-inline > li {
+	width: 33.3%;
+}

@@ -1,0 +1,25 @@
+<section>
+	<ul class="nav nav-pills">
+		<li ng-class="{ active:panels.isSet(1) }">
+			<a href="#this" ng-click="panels.setTab(1)">Description</a>
+		</li>
+		<li ng-class="{ active:panels.isSet(2) }">
+			<a href="#this" ng-click="panels.setTab(2)">Specifications</a>
+		</li>
+		<li ng-class="{ active:panels.isSet(3) }">
+			<a href="#this" ng-click="panels.setTab(3)">Reviews</a>
+		</li>
+	</ul>
+
+	<!-- description -->
+	<div class="panel" ng-show="panels.isSet(1)" ng-include="'partials/product-description.html'">
+	</div>
+
+	<!-- spec -->
+	<div class="panel" ng-show="panels.isSet(2)" product-specs>
+	</div>
+
+	<!-- reviews -->
+	<div class="panel" ng-show="panels.isSet(3)" ng-include="'partials/product-reviews.html'">
+	</div>
+</section>

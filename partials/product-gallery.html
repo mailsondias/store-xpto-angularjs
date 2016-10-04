@@ -1,0 +1,10 @@
+<div class="gallery" ng-show="product.images">
+	<div class="img-wrap text-center" ng-show="product.images">
+		<img class="img-responsive" ng-src="{{product.images[gallery.current]}}" />
+	</div>
+	<ul class="list-inline thumbs clearfix">
+		<li class="small-image pull-left thumbnail" ng-repeat="image in product.images" ng-if="!$first">
+			<img ng-src="{{ image }}" />
+		</li>
+	</ul>
+</div>
